@@ -1,35 +1,52 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { useState } from "react";
+import bgStars from "./assets/images/bg-stars.svg";
+import bgHills from "./assets/images/pattern-hills.svg";
+
+import instagram from "./assets/images/icon-instagram.svg";
+import pinterest from "./assets/images/icon-pinterest.svg";
+import facebook from "./assets/images/icon-facebook.svg";
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [count, setCount] = useState(0);
 
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <main>
+        <picture>
+          <img src={bgStars} alt="stars-background" />
+        </picture>
+
+        <section>
+          <h1>We're launching soon</h1>
+          <div>
+            <span>08</span>
+            <span>23</span>
+            <span>55</span>
+            <span>41</span>
+            <span>Days</span>
+            <span>Hours</span>
+            <span>Minutes</span>
+            <span>Seconds</span>
+          </div>
+        </section>
+
+        <footer>
+          <a href="#">
+            <img src={facebook} alt="facebook-icon" />
+          </a>
+          <a href="#">
+            <img src={pinterest} alt="pinterest-icon" />
+          </a>
+          <a href="#">
+            <img src={instagram} alt="instagram" />
+          </a>
+        </footer>
+        <picture>
+          <img src={bgHills} alt="hills-background" />
+        </picture>
+      </main>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
