@@ -4,14 +4,15 @@ export default {
   theme: {
     extend: {
       colors: {
-        "grayish-blue": "#8486a9",
-        "soft-red": "#fb6087",
-        "dark-desaturated-blue": "#343650",
-        "very-dark-blue": "#1e1f29",
-        "mostly-black": "#191a24",
+        "primary-1": "#8486a9",
+        "primary-2": "#fb6087",
+        "neutral-1": "#ffffff",
+        "neutral-2": "#343650",
+        "neutral-3": "#1e1f29",
+        "neutral-4": "#191a24",
       },
       fontFamily: {
-        "red-hat": ["Red Hat Text", "sans-serif"],
+        RedHatText: ["RedHatText", "sans-serif"],
       },
     },
   },
