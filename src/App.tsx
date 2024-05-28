@@ -1,4 +1,4 @@
-import { useDebugValue, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import bgStars from "./assets/images/bg-stars.svg";
 import bgHills from "./assets/images/pattern-hills.svg";
 
